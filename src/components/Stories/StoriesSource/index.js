@@ -10,7 +10,7 @@ class StoriesSource extends Component {
     };
 
     componentDidMount() {
-        const url = this.props.url + '&sources=' + this.props.source + '&pageSize=15&page=1';
+        const url = `${this.props.url}&sources=${this.props.source}&pageSize=15&page=1&language=en`;
         fetch(url)
             .then(res => res.json())
             .then(json => this.setState({stories: json.articles}))
