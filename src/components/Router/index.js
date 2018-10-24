@@ -3,7 +3,7 @@ import {Switch, Route} from 'react-router-dom';
 
 import TechStories from "../Stories";
 
-const Router = props => (
+const Router = () => (
     <Switch>
         <Route
             exact path="/"
@@ -11,23 +11,23 @@ const Router = props => (
         />
         <Route
             exact path="/ars-technica"
-            render={(props => <TechStories {...props} />)}
+            component={(props => <TechStories {...props} />)}
         />
         <Route
             exact path="/engadget"
-            render={(props => <TechStories {...props} />)}
+            component={(props => <TechStories {...props} />)}
         />
         <Route
             exact path="/the-verge"
-            render={(props => <TechStories {...props} />)}
+            component={(props => <TechStories {...props} />)}
         />
         <Route
             exact path="/recode"
-            render={(props => <TechStories {...props} />)}
+            component={(props => <TechStories {...props} />)}
         />
         <Route
             exact path="/techradar"
-            render={(props => <TechStories {...props} />)}
+            component={(props => <TechStories {...props} />)}
         />
     </Switch>
 );
