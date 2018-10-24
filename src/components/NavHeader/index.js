@@ -34,6 +34,9 @@ export default class NavHeader extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem className='ml-2 mr-2'>
+                                <NavLink href="/">Home</NavLink>
+                            </NavItem>
+                            <NavItem className='ml-2 mr-2'>
                                 <NavLink href="/ars-technica">Ars Technica</NavLink>
                             </NavItem>
                             <NavItem className='ml-2 mr-2'>
