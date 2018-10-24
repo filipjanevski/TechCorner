@@ -10,8 +10,10 @@ class StorieCard extends Component {
     };
 
     styleBtnLink = {
-        'text-decoration': 'none',
+        textDecoration: 'none',
         color: 'white',
+        position: "absolute",
+        bottom: 10
     };
 
     render() {
