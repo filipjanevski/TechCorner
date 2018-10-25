@@ -20,7 +20,7 @@ class StoriesMain extends Component {
     render() {
         return (
             <div className='row'>
-                {this.state.stories.map(st => <StorieCard storie={st}/>)}
+                {this.state.stories.map(st => <StorieCard key={st.url} storie={st}/>)}
             </div>
         );
     }

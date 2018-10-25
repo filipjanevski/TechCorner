@@ -27,7 +27,7 @@ class StorieCard extends Component {
                         <CardTitle>{this.storie.title}</CardTitle>
                         <CardSubtitle>Author: {this.storie.author}</CardSubtitle>
                         <CardText>{this.storie.content}</CardText>
-                        <a href={this.storie.url} style={this.styleBtnLink} className='btn btn-info'>Read More</a>
+                        <a href={this.storie.url} style={this.styleBtnLink} className='btn btn-dark'>Read Full Story</a>
                     </CardBody>
                 </Card>
             </div>

@@ -10,6 +10,11 @@ import {
 } from 'reactstrap';
 
 export default class NavHeader extends React.Component {
+
+    style = {
+        color: '#ccc'
+    };
+
     constructor(props) {
         super(props);
 
@@ -34,22 +39,22 @@ export default class NavHeader extends React.Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem className='ml-2 mr-2'>
-                                <NavLink href="/">Home</NavLink>
+                                <NavLink href="/" style={this.style}>Home</NavLink>
                             </NavItem>
                             <NavItem className='ml-2 mr-2'>
-                                <NavLink href="/ars-technica">Ars Technica</NavLink>
+                                <NavLink href="/ars-technica" style={this.style}>Ars Technica</NavLink>
                             </NavItem>
                             <NavItem className='ml-2 mr-2'>
-                                <NavLink href="/engadget">Engadget</NavLink>
+                                <NavLink href="/engadget" style={this.style}>Engadget</NavLink>
                             </NavItem>
                             <NavItem className='ml-2 mr-2'>
-                                <NavLink href="/recode">Recode</NavLink>
+                                <NavLink href="/recode" style={this.style}>Recode</NavLink>
                             </NavItem>
                             <NavItem className='ml-2 mr-2'>
-                                <NavLink href="/techradar">TechRadar</NavLink>
+                                <NavLink href="/techradar" style={this.style}>TechRadar</NavLink>
                             </NavItem>
                             <NavItem className='ml-2 mr-2'>
-                                <NavLink href="/the-verge">The Verge</NavLink>
+                                <NavLink href="/the-verge" style={this.style}>The Verge</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
