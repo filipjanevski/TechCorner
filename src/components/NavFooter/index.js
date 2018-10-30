@@ -43,7 +43,10 @@ class NavFooter extends Component {
                     </div>
                     <div className="row p-3" style={this.styleBottom}>
                         <div className="col-md-12 text-center">
-                            <p>This project uses a free version of <a href="https://newsapi.org">News API</a></p>
+                            <p>This project is licenced under the <a href="https://mit-license.org/">MIT</a> License. It
+                                uses a free version of <a
+                                    href="https://newsapi.org">News API</a>. By using this site you agree to the <a
+                                    href="/privacy">Privacy Policy</a> and <a href="/terms">Terms of Service</a></p>
                         </div>
                     </div>
                 </div>
