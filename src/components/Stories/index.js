@@ -26,6 +26,7 @@ class TechStories extends Component {
         if (this.props.location.pathname === '/') {
             const meta = [
                 {name: 'author', content: "Filip Janevski"},
+                {name: 'description', content: "All the tech news you will ever need in one place!"},
 
                 {name: 'twitter:site', content: "Tech Corner! - Home"},
                 {name: 'twitter:creator', content: "Filip Janevski"},
