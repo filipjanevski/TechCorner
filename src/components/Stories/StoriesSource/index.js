@@ -9,10 +9,6 @@ class StoriesSource extends Component {
         stories: []
     };
 
-    style = {
-        zIndex:1000
-    };
-
     componentDidMount() {
         const url = `${this.props.url}&sources=${this.props.source}&pageSize=15&page=1&language=en`;
         fetch(url)
@@ -25,7 +21,7 @@ class StoriesSource extends Component {
             <div>
                 <div className="row">
                     <div className="col-md-12 text-center mb-4">
-                        <div className="display-2" style={this.style}>{this.props.sourceName}</div>
+                        <div className="display-2">{this.props.sourceName}</div>
                         <hr/>
                     </div>
                 </div>

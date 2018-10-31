@@ -7,14 +7,12 @@ import Router from "../Router";
 
 import "./App.css";
 
-
-
 class App extends Component {
     render() {
         return (
             <div className="content">
-                <NavHeader/>
-                <div className="container mt-4 mb-4">
+                <NavHeader style={this.styleNav} />
+                <div className="container mt-4 mb-4" style={this.styleContent}>
                     <Router/>
                 </div>
                 <NavFooter/>
