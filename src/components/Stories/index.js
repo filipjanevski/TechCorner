@@ -31,7 +31,7 @@ class TechStories extends Component {
 
                 {name: 'twitter:site', content: "Tech Corner! - Home"},
                 {name: 'twitter:creator', content: "Filip Janevski"},
-                {name: 'twitter:title', content: "Tech Corner!"},
+                {name: 'twitter:title', content: "Tech Corner! - Home"},
                 {name: 'twitter:image', content: Logo},
 
                 {property: 'og:title', content: "Tech Corner! - Home"},
@@ -57,7 +57,7 @@ class TechStories extends Component {
 
                 {name: 'twitter:site', content: "Tech Corner! - " + this.state.sourceName[this.state.source]},
                 {name: 'twitter:creator', content: "Filip Janevski"},
-                {name: 'twitter:title', content: "Tech Corner!"},
+                {name: 'twitter:title', content: "Tech Corner! - " + this.state.sourceName[this.state.source]},
                 {name: 'twitter:image', content: Logo},
 
                 {property: 'og:title', content: "Tech Corner! - " + this.state.sourceName[this.state.source]},
@@ -71,7 +71,7 @@ class TechStories extends Component {
             ];
             return (
                 <div>
-                    <Helmet title={"Tech Corner! - " + this.state.source} meta={meta}/>
+                    <Helmet title={"Tech Corner! - " + this.state.sourceName[this.state.source]} meta={meta}/>
                     <StoriesSource url={this.newsFetchUrl} source={this.state.source}
                                    sourceName={this.state.sourceName[this.state.source]}/>
                 </div>
