@@ -6,6 +6,7 @@ import {Logo} from '../../Logo';
 
 import StoriesMain from "./StoriesMain";
 import StoriesSource from "./StoriesSource";
+import Intro from "../Intro";
 
 class TechStories extends Component {
 
@@ -45,6 +46,7 @@ class TechStories extends Component {
             return (
                 <div>
                     <Helmet title="Tech Corner! - Home" meta={meta}/>
+                    <Intro/>
                     <StoriesMain url={this.newsFetchUrl}/>
                 </div>
             );

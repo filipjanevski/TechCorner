@@ -1,16 +1,14 @@
 import React, {Component} from 'react';
 
-import './index.css';
-
 class NavFooter extends Component {
 
     styleTop = {
-        color: '#eeeeee',
-        background: '#343a40'
+        color: '#3d2d3d',
+        background: '#00C6A7'
     };
     styleBottom = {
-        color: '#eeeeee',
-        background: '#272727'
+        color: '#ffffff',
+        background: '#00362e'
     };
 
     render() {

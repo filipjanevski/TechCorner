@@ -12,7 +12,11 @@ import {
 export default class NavHeader extends React.Component {
 
     style = {
-        color: '#ccc'
+        color: '#3d2d3d',
+    };
+
+    onTopEl = {
+        zIndex: 1000
     };
 
     constructor(props) {
@@ -33,9 +37,9 @@ export default class NavHeader extends React.Component {
     render() {
         return (
             <div>
-                <Navbar color="dark" dark expand="md">
-                    <NavbarBrand href="/" className='ml-4 mr-2'>Tech Corner!</NavbarBrand>
-                    <NavbarToggler onClick={this.toggle}/>
+                <Navbar color="transparent" light expand="md" style={this.onTopEl}>
+                    <NavbarBrand href="/" className='ml-4 mr-2' style={this.style}>Tech Corner!</NavbarBrand>
+                    <NavbarToggler onClick={this.toggle} className=""/>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem className='ml-2 mr-2'>
