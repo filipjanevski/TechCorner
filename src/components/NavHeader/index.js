@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
     Collapse,
     Navbar,
@@ -7,12 +7,14 @@ import {
     Nav,
     NavItem,
     NavLink
-} from 'reactstrap';
+} from "reactstrap";
+
+import "./index.css";
 
 export default class NavHeader extends React.Component {
 
     style = {
-        color: '#3d2d3d',
+        color: "#3d2d3d",
     };
 
     onTopEl = {
@@ -37,32 +39,33 @@ export default class NavHeader extends React.Component {
     render() {
         return (
             <div>
-                <Navbar color="transparent" light expand="md" style={this.onTopEl}>
-                    <NavbarBrand href="/" className='ml-4 mr-2' style={this.style}>Tech Corner!</NavbarBrand>
-                    <NavbarToggler onClick={this.toggle} className=""/>
+                <Navbar color="transparent" light expand="md" style={this.onTopEl} className="navback">
+                    <NavbarBrand href="/" className="ml-4 mr-2" style={this.style}>Tech Corner!</NavbarBrand>
+                    <NavbarToggler onClick={this.toggle}/>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="mr-auto" navbar>
-                            <NavItem className='ml-2 mr-2'>
-                                <NavLink href="/" style={this.style}>Home</NavLink>
+                            <NavItem className="ml-2 mr-2">
+                                <NavLink href="/" style={this.style} active={true}>Home</NavLink>
                             </NavItem>
-                            <NavItem className='ml-2 mr-2'>
+                            <NavItem className="ml-2 mr-2">
                                 <NavLink href="/ars-technica" style={this.style}>Ars Technica</NavLink>
                             </NavItem>
-                            <NavItem className='ml-2 mr-2'>
+                            <NavItem className="ml-2 mr-2">
                                 <NavLink href="/engadget" style={this.style}>Engadget</NavLink>
                             </NavItem>
-                            <NavItem className='ml-2 mr-2'>
+                            <NavItem className="ml-2 mr-2">
                                 <NavLink href="/recode" style={this.style}>Recode</NavLink>
                             </NavItem>
-                            <NavItem className='ml-2 mr-2'>
+                            <NavItem className="ml-2 mr-2">
                                 <NavLink href="/techradar" style={this.style}>TechRadar</NavLink>
                             </NavItem>
-                            <NavItem className='ml-2 mr-2'>
+                            <NavItem className="ml-2 mr-2">
                                 <NavLink href="/the-verge" style={this.style}>The Verge</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
                 </Navbar>
+                <div className="navb"> </div>
             </div>
         );
     }

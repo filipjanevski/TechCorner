@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
+import React, {Component} from "react";
+import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle} from "reactstrap";
 
 class StorieCard extends Component {
 
@@ -10,8 +10,8 @@ class StorieCard extends Component {
     };
 
     styleBtnLink = {
-        textDecoration: 'none',
-        color: 'white',
+        textDecoration: "none",
+        color: "white",
         position: "absolute",
         bottom: 10
     };
@@ -27,7 +27,7 @@ class StorieCard extends Component {
                         <CardTitle>{this.storie.title}</CardTitle>
                         <CardSubtitle>Author: {this.storie.author}</CardSubtitle>
                         <CardText>{this.storie.content}</CardText>
-                        <a href={this.storie.url} style={this.styleBtnLink} className='btn btn-dark'>Read Full Story</a>
+                        <a href={this.storie.url} style={this.styleBtnLink} className="btn btn-dark">Read Full Story</a>
                     </CardBody>
                 </Card>
             </div>

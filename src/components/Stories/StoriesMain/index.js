@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import {fetch} from "whatwg-fetch";
 
-import config from '../config';
+import config from "../config";
 import StorieCard from "../StorieCard";
 
 class StoriesMain extends Component {
@@ -19,7 +19,7 @@ class StoriesMain extends Component {
 
     render() {
         return (
-            <div className='row'>
+            <div className="row">
                 {this.state.stories.map(st => <StorieCard key={st.url} storie={st}/>)}
             </div>
         );

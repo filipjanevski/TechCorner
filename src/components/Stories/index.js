@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Helmet} from "react-helmet";
 
 import config from './config';
-import {Logo} from '../../Logo';
+import {Logo} from "../../Logo";
 
 import StoriesMain from "./StoriesMain";
 import StoriesSource from "./StoriesSource";
@@ -72,7 +72,8 @@ class TechStories extends Component {
             return (
                 <div>
                     <Helmet title={"Tech Corner! - " + this.state.source} meta={meta}/>
-                    <StoriesSource url={this.newsFetchUrl} source={this.state.source}/>
+                    <StoriesSource url={this.newsFetchUrl} source={this.state.source}
+                                   sourceName={this.state.sourceName[this.state.source]}/>
                 </div>
             )
         }

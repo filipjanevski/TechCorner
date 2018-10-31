@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 import {fetch} from "whatwg-fetch";
 
 import StorieCard from "../StorieCard";
@@ -7,6 +7,10 @@ class StoriesSource extends Component {
 
     state = {
         stories: []
+    };
+
+    style = {
+        zIndex:1000
     };
 
     componentDidMount() {
@@ -18,8 +22,16 @@ class StoriesSource extends Component {
 
     render() {
         return (
-            <div className='row'>
-                {this.state.stories.map(st => <StorieCard key={st.url} storie={st}/>)}
+            <div>
+                <div className="row">
+                    <div className="col-md-12 text-center mb-4">
+                        <div className="display-2" style={this.style}>{this.props.sourceName}</div>
+                        <hr/>
+                    </div>
+                </div>
+                <div className="row">
+                    {this.state.stories.map(st => <StorieCard key={st.url} storie={st}/>)}
+                </div>
             </div>
         );
     }

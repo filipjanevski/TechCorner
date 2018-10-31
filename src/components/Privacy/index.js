@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 
 class Privacy extends Component {
     render() {
@@ -45,7 +45,7 @@ class Privacy extends Component {
                 <h4>Usage Data</h4>
 
                 <p>We may also collect information how the Service is accessed and used ("Usage Data"). This Usage Data
-                    may include information such as your computer's Internet Protocol address (e.g. IP address), browser
+                    may include information such as your computer"s Internet Protocol address (e.g. IP address), browser
                     type, browser version, the pages of our Service that you visit, the time and date of your visit, the
                     time spent on those pages, unique device identifiers and other diagnostic data.</p>
 
@@ -121,13 +121,13 @@ class Privacy extends Component {
 
                 <h2>Links To Other Sites</h2>
                 <p>Our Service may contain links to other sites that are not operated by us. If you click on a third
-                    party link, you will be directed to that third party's site. We strongly advise you to review the
+                    party link, you will be directed to that third party"s site. We strongly advise you to review the
                     Privacy Policy of every site you visit.</p>
                 <p>We have no control over and assume no responsibility for the content, privacy policies or practices
                     of any third party sites or services.</p>
 
 
-                <h2>Children's Privacy</h2>
+                <h2>Children"s Privacy</h2>
                 <p>Our Service does not address anyone under the age of 18 ("Children").</p>
                 <p>We do not knowingly collect personally identifiable information from anyone under the age of 18. If
                     you are a parent or guardian and you are aware that your Children has provided us with Personal

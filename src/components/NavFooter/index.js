@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 
 class NavFooter extends Component {
 
     styleTop = {
-        color: '#3d2d3d',
-        background: '#00C6A7'
+        color: "#3d2d3d",
+        background: "#00C6A7"
     };
     styleBottom = {
-        color: '#ffffff',
-        background: '#00362e'
+        color: "#ffffff",
+        background: "#00362e"
     };
 
     render() {
@@ -30,7 +30,7 @@ class NavFooter extends Component {
                         </div>
                         <div className="col-md-3">
                             <h4>Site map</h4>
-                            <div className='list-group'>
+                            <div className="list-group">
                                 <div className="list-item"><a href="/ars-technica">Ars Technica</a></div>
                                 <div className="list-item"><a href="/engadget">Engadget</a></div>
                                 <div className="list-item"><a href="recode">Recode</a></div>
