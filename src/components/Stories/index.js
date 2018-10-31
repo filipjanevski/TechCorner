@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
+import {Helmet} from "react-helmet";
 
 import config from './config';
+import {Logo} from '../../Logo';
 
 import StoriesMain from "./StoriesMain";
 import StoriesSource from "./StoriesSource";
-
-import DocumentMeta from 'react-document-meta';
-
 
 class TechStories extends Component {
 
@@ -25,38 +24,53 @@ class TechStories extends Component {
 
     render() {
         if (this.props.location.pathname === '/') {
-            const meta = {
-                title: `Tech Corner!`,
-                description: 'Get all your tech news in one place!',
-                canonical: `https://tech-corner.netlify.com`,
-                meta: {
-                    charset: 'utf-8',
-                    name: {
-                        keywords: 'tech,news,technology,mobile,smart'
-                    }
-                }
-            };
+            const meta = [
+                {name: 'author', content: "Filip Janevski"},
+
+                {name: 'twitter:site', content: "Tech Corner! - Home"},
+                {name: 'twitter:creator', content: "Filip Janevski"},
+                {name: 'twitter:title', content: "Tech Corner!"},
+                {name: 'twitter:image', content: Logo},
+
+                {property: 'og:title', content: "Tech Corner! - Home"},
+                {property: 'og:site_name', content: "Tech Corner!"},
+                {property: 'og:type', content: "website"},
+                {property: 'og:url', content: "https://tech-corner.netlify.com"},
+                {property: 'og:description', content: "All the tech news you will ever need in one place!"},
+                {property: 'og:image', content: Logo},
+
+                {name: 'viewport', content: 'width=device-width, maximum-scale=1'},
+            ];
             return (
-                <DocumentMeta {...meta}>
+                <div>
+                    <Helmet title="Tech Corner! - Home" meta={meta}/>
                     <StoriesMain url={this.newsFetchUrl}/>
-                </DocumentMeta>
+                </div>
             );
         } else {
-            const meta = {
-                title: `Tech Corner! - ${this.state.sourceName[this.state.source]}`,
-                description: 'Get all your tech news in one place!',
-                canonical: `https://tech-corner.netlify.com/${this.state.source}`,
-                meta: {
-                    charset: 'utf-8',
-                    name: {
-                        keywords: 'tech,news,technology,mobile,smart'
-                    }
-                }
-            };
+            const meta = [
+                {name: 'author', content: "Filip Janevski"},
+                {name: 'description', content: "All the tech news you will ever need in one place!"},
+
+                {name: 'twitter:site', content: "Tech Corner! - " + this.state.sourceName[this.state.source]},
+                {name: 'twitter:creator', content: "Filip Janevski"},
+                {name: 'twitter:title', content: "Tech Corner!"},
+                {name: 'twitter:image', content: Logo},
+
+                {property: 'og:title', content: "Tech Corner! - " + this.state.sourceName[this.state.source]},
+                {property: 'og:site_name', content: "Tech Corner!"},
+                {property: 'og:type', content: "website"},
+                {property: 'og:url', content: "https://tech-corner.netlify.com/" + this.state.source},
+                {property: 'og:description', content: "All the tech news you will ever need in one place!"},
+                {property: 'og:image', content: Logo},
+
+                {name: 'viewport', content: 'width=device-width, maximum-scale=1'},
+            ];
             return (
-                <DocumentMeta {...meta}>
+                <div>
+                    <Helmet title={"Tech Corner! - " + this.state.source} meta={meta}/>
                     <StoriesSource url={this.newsFetchUrl} source={this.state.source}/>
-                </DocumentMeta>
+                </div>
             )
         }
     }
