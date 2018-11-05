@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {fetch} from "whatwg-fetch";
 
-import config from "../config";
+import config from "../../../config/config";
 import StorieCard from "../StorieCard";
 
 class StoriesMain extends Component {

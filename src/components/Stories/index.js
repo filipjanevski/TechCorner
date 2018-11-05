@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Helmet} from "react-helmet";
 
-import config from './config';
+import config from '../../config/config';
 import {Logo} from "../../Logo";
 
 import StoriesMain from "./StoriesMain";
