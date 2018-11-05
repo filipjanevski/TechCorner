@@ -1,7 +1,8 @@
-// To be implemented
 import React, {Component} from "react";
-import "./index.css";
+
 import {Logo} from "../../Logo";
+
+import "./index.css";
 
 class Intro extends Component {
     render() {

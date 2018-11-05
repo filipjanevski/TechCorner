@@ -1,0 +1,10 @@
+.styleCard {
+    height: 570px;
+}
+
+.styleBtnLink {
+    text-decoration: none;
+    color: #ffffff;
+    position: absolute;
+    bottom: 10px;
+}

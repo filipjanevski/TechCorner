@@ -1,20 +1,12 @@
 import React, {Component} from "react";
 
+import "./index.css";
+
 class NavFooter extends Component {
-
-    styleTop = {
-        color: "#3d2d3d",
-        background: "#00C6A7"
-    };
-    styleBottom = {
-        color: "#ffffff",
-        background: "#00362e"
-    };
-
     render() {
         return (
             <footer>
-                <div className="container-fluid" style={this.styleTop}>
+                <div className="container-fluid styleTop">
                     <div className="row ml-5 mr-5 mb-4 p-3">
                         <div className="col-md-3 text-justify">
                             <h4>Welcome to Tech Corner!</h4>
@@ -39,7 +31,7 @@ class NavFooter extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row p-3" style={this.styleBottom}>
+                    <div className="row p-3 styleBottom">
                         <div className="col-md-12 text-center">
                             <p>This project is licenced under the <a href="https://mit-license.org/">MIT</a> License. It
                                 uses a free version of <a

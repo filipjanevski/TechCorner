@@ -1,16 +1,11 @@
 import React, {Component} from "react";
 
+import "./index.css";
+
 class Terms extends Component {
-
-    style = {
-        zIndex: 1000,
-        color: "#3d2d3d"
-    };
-
-
     render() {
         return (
-            <div style={this.style} className="row">
+            <div className="row styleText">
                 <div className="col-md-12">
                     <div className="display-1">Terms of Service ("Terms")</div>
 

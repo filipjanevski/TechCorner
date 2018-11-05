@@ -12,15 +12,6 @@ import {
 import "./index.css";
 
 export default class NavHeader extends React.Component {
-
-    style = {
-        color: "#3d2d3d",
-    };
-
-    onTopEl = {
-        zIndex: 1000
-    };
-
     constructor(props) {
         super(props);
 
@@ -39,28 +30,28 @@ export default class NavHeader extends React.Component {
     render() {
         return (
             <div>
-                <Navbar color="transparent" light expand="md" style={this.onTopEl} className="navback">
-                    <NavbarBrand href="/" className="ml-4 mr-2" style={this.style}>Tech Corner!</NavbarBrand>
+                <Navbar color="transparent" light expand="md" className="navback onTopEl">
+                    <NavbarBrand href="/" className="ml-4 mr-2 styleLink">Tech Corner!</NavbarBrand>
                     <NavbarToggler onClick={this.toggle}/>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem className="ml-2 mr-2">
-                                <NavLink href="/" style={this.style} active={true}>Home</NavLink>
+                                <NavLink href="/" className="styleLink">Home</NavLink>
                             </NavItem>
                             <NavItem className="ml-2 mr-2">
-                                <NavLink href="/ars-technica" style={this.style}>Ars Technica</NavLink>
+                                <NavLink href="/ars-technica" className="styleLink">Ars Technica</NavLink>
                             </NavItem>
                             <NavItem className="ml-2 mr-2">
-                                <NavLink href="/engadget" style={this.style}>Engadget</NavLink>
+                                <NavLink href="/engadget" className="styleLink">Engadget</NavLink>
                             </NavItem>
                             <NavItem className="ml-2 mr-2">
-                                <NavLink href="/recode" style={this.style}>Recode</NavLink>
+                                <NavLink href="/recode" className="styleLink">Recode</NavLink>
                             </NavItem>
                             <NavItem className="ml-2 mr-2">
-                                <NavLink href="/techradar" style={this.style}>TechRadar</NavLink>
+                                <NavLink href="/techradar" className="styleLink">TechRadar</NavLink>
                             </NavItem>
                             <NavItem className="ml-2 mr-2">
-                                <NavLink href="/the-verge" style={this.style}>The Verge</NavLink>
+                                <NavLink href="/the-verge" className="styleLink">The Verge</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
