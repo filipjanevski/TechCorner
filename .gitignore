@@ -1,0 +1,4 @@
+# Ignore IDE, Node and build files
+.idea
+node_modules
+build

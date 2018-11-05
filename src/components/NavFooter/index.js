@@ -45,6 +45,8 @@ class NavFooter extends Component {
                                 uses a free version of <a
                                     href="https://newsapi.org">News API</a>. By using this site you agree to the <a
                                     href="/privacy">Privacy Policy</a> and <a href="/terms">Terms of Service</a></p>
+                            <p>This content is property of it's rightful owner. I take no ownership of the content
+                                shared except the page itself.</p>
                         </div>
                     </div>
                 </div>
