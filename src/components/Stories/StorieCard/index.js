@@ -1,5 +1,7 @@
 import React, {Component} from "react";
-import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle} from "reactstrap";
+import {Card, CardText, CardBody, CardTitle, CardSubtitle} from "reactstrap";
+
+import ProgressiveImage from "react-progressive-image";
 
 import "./index.css";
 
@@ -11,9 +13,9 @@ class StorieCard extends Component {
         return (
             <div className="col-md-4 mb-3">
                 <Card className="styleCard">
-                    <CardImg top width="100%"
-                             src={this.storie.urlToImage}
-                             alt="Card image cap"/>
+                    <ProgressiveImage src={this.storie.urlToImage} placeholder={this.storie.urlToImage+'?w=200&h=200'}>
+                        {src => <img src={src} alt={this.storie.title} />}
+                    </ProgressiveImage>
                     <CardBody>
                         <CardTitle>{this.storie.title}</CardTitle>
                         <CardSubtitle><small>Author: {this.storie.author}</small></CardSubtitle>
