@@ -41,7 +41,7 @@ class TechStories extends Component {
                 {property: 'og:description', content: "All the tech news you will ever need in one place!"},
                 {property: 'og:image', content: Logo},
 
-                {name: 'viewport', content: 'width=device-width, maximum-scale=1'},
+                {name: 'viewport', content: 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1, shrink-to-fit=no'},
             ];
             return (
                 <div>
@@ -67,7 +67,7 @@ class TechStories extends Component {
                 {property: 'og:description', content: "All the tech news you will ever need in one place!"},
                 {property: 'og:image', content: Logo},
 
-                {name: 'viewport', content: 'width=device-width, maximum-scale=1'},
+                {name: 'viewport', content: 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1, shrink-to-fit=no'},
             ];
             return (
                 <div>
