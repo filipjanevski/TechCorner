@@ -32,7 +32,7 @@ export default class NavHeader extends React.Component {
             <div>
                 <Navbar color="transparent" light expand="md" className="navback onTopEl">
                     <NavbarBrand href="/" className="ml-4 mr-2 styleLink">Tech Corner!</NavbarBrand>
-                    <NavbarToggler onClick={this.toggle}/>
+                    <NavbarToggler onClick={this.toggle} name="Menu" className="p-2">Menu</NavbarToggler>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem className="ml-2 mr-2">

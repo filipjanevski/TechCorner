@@ -6,3 +6,11 @@
     color: #ffffff;
     background: #00362e;
 }
+.list-item a{
+    color: #3d2d3d !important;
+    text-decoration: underline;
+}
+.legal a {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
